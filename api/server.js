@@ -13,10 +13,8 @@ server.use('/api/register', registerRouter);
 server.use('/api/login', loginRouter);
 server.use('/api/users', usersRouter);
 
-
 server.get('/', (req, res) => {
     res.json({ api: "It's working" });
   });
-
 
 module.exports = server;

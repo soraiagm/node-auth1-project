@@ -4,19 +4,19 @@ const router = require('express').Router();
 const Users = require('../model.js'); 
 
 // WORKING //
-router.get('/secret', (req, res, next) => {
-    if(req.headers.authorization) {
-      bc.hash(req.headers.authorization, 8, (err, hash) => { // 10 is the number of rounds
-        if(err) {
-          res.status(500).json({ oops: "it broke"})
-        } else {
-          res.status(200).json({ hash })
-        }
-      })
-    } else {
-      res.status(400).json({error: 'missing header'})
-    }
-  });
+// router.get('/secret', (req, res, next) => {
+//     if(req.headers.authorization) {
+//       bc.hash(req.headers.authorization, 8, (err, hash) => { // 10 is the number of rounds
+//         if(err) {
+//           res.status(500).json({ oops: "it broke"})
+//         } else {
+//           res.status(200).json({ hash })
+//         }
+//       })
+//     } else {
+//       res.status(400).json({error: 'missing header'})
+//     }
+//   });
 
 
   // WORKING //
